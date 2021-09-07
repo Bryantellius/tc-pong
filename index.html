@@ -14,11 +14,11 @@
     <script src="utils/dom.js" defer></script>
     <script src="models/League.js" defer></script>
     <script src="app.js" defer></script>
-    <title>ScoreBoard</title>
+    <title>Versus | Table Tennis</title>
   </head>
   <body>
     <main class="container text-center my-3">
-      <h1>Paddlers</h1>
+      <h1>Versus</h1>
       <hr />
       <div class="competitorSelection">
         <form class="form-inline row">
@@ -66,6 +66,22 @@
               <h3 id="competitor1Name">Player One</h3>
               <small id="competitor1Record">-</small>
               <span id="competitor1Score" class="scorecard">0</span>
+              <hr />
+              <div class="btn-group w-100">
+                <button
+                  aria-label="Player 1 Score Increment"
+                  class="btn btn-success"
+                  id="player1Increment"
+                >
+                  +</button
+                ><button
+                  aria-label="Player 1 Score Decrement"
+                  class="btn btn-outline-success"
+                  id="player1Decrement"
+                >
+                  -
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -75,6 +91,22 @@
               <h3 id="competitor2Name">Player Two</h3>
               <small id="competitor2Record">-</small>
               <span id="competitor2Score" class="scorecard">0</span>
+              <hr />
+              <div class="btn-group w-100">
+                <button
+                  aria-label="Player 2 Score Increment"
+                  class="btn btn-success"
+                  id="player2Increment"
+                >
+                  +</button
+                ><button
+                  aria-label="Player 2 Score Decrement"
+                  class="btn btn-outline-success"
+                  id="player2Decrement"
+                >
+                  -
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -82,8 +114,6 @@
       <hr />
       <div class="text-center" role="group" aria-label="Game Buttons">
         <button type="button" class="btn btn-sm btn-secondary">Reset</button>
-        <button type="button" class="btn btn-lg btn-success">Save</button>
-        <button type="button" class="btn btn-sm btn-danger">Challenge</button>
       </div>
     </main>
   </body>
